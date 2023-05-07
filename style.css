@@ -19,6 +19,10 @@
     --h2-font: 2.5rem;
     --p-font-sub: 1.3rem;
     --p-font: 1.1rem;
+    --big-font-mobile: 2rem;
+    --h2-font-mobile: 2.0rem;
+    --p-font-sub-mobile: 1.0rem;
+    --p-font-mobile: 0.9rem;
 }
 
 body {
@@ -26,7 +30,7 @@ body {
     color: var(--text-color);
 }
 
-header {
+nav {
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,7 +45,61 @@ header {
     background: #FFFFFF24 0% 0% no-repeat padding-box;
 }
 
+nav .menu-toggle {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav .menu-toggle h2 {
+        color: #00953B;
+        padding: 5px 10px 5px 10px;
+    }
+
+    nav .navlist {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 998;
+    }
+
+    nav .navlist.show {
+        display: block;
+    }
+
+    nav .navlist li {
+        margin: 5px 0;
+    }
+
+    nav .navlist li a {
+        display: block;
+        padding: 10px;
+        color: #00953B;
+        text-decoration: none;
+    }
+
+    nav .navlist li a:hover {
+        color: #666;
+    }
+
+    nav .menu-open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    nav .menu-open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    nav .menu-open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
 
 /******Nav*******/
 .navlist {
@@ -68,6 +126,7 @@ header {
 .container-medium {
     padding: 3rem 5rem;
 }
+
 
 .flex {
     display: flex;
@@ -155,6 +214,7 @@ header {
 .sub-box {
     text-align: center;
     margin-top: 40px;
+    width: 400px;
 }
 
 .sub-img img {
@@ -242,4 +302,67 @@ footer p {
     text-align: center;
     padding: 10px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    .container-medium {
+        padding: 1rem 2rem;
+    }
+
+    .home-text h1 {
+        font-size: var(--big-font-mobile);
+    }
+
+    .home-text p {
+        font-size: var(--p-font-sub-mobile);
+        width: 90%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-text {
+        min-height: 60vh;
+    }
+
+    .home-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circulo img {
+        width: 150px;
+        height: 150px;
+        background-color: #FFF;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .trabalhos-img img {
+        width: 60%;
+    }
+
+    .sub-box h2 {
+        font-size: var(--p-font-sub-mobile);
+        margin-bottom: 20px;
+    }
+
+    .sub-box p {
+        font-size: 14px;
+        width: 100%;
+        color: #b1b1b1;
+    }
+
+    .sub-box {
+        text-align: center;
+        margin-top: 40px;
+        width: 300px;
+    }
 }

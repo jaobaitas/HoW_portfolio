@@ -1,94 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HoW 5 Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
 
-    </head>
-    <body>
-        <!--header-->
-        <header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HoW 5 Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <h2>Menu</h2>
+            </button>
             <ul class="navlist">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-        </header>
+        </nav>
 
         <!--home-->
         <section class="home" id="home">
-            <div class="home-text">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias doloremque cupiditate numquam nobis! </p>
+            <div class="container">
+                <div class="flex">
+                    <div class="home-text">
+                        <div>
+                            <h1>Nosso Portfolio</h1>
+                            <p>Nós somos aspirantes a desenvolvedores e neste portfólio você pode conhecer mais sobre
+                                nós e
+                                os trabalhos que realizamos juntos.</p>
+                        </div>
+                    </div>
+                    <div class="home-img">
+                        <div class="circulo">
+                            <img src="./img/bianca.jpeg" width="120" alt="">
+                        </div>
+                        <div>
+                            <div class="circulo">
+                                <img src="./img/vinicios.jpeg" alt="">
+                            </div>
+                            <div class="circulo">
+                                <img src="./img/joao.jpeg" width="120" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!--sobre nos-->
-        <section class="sobre">
+    </header>
+    <!--sobre nos-->
+    <section class="sobre" id="sobre">
+        <div class="container-medium">
             <h1>Sobre nós</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque </p>
-            <div class="sub-box">
-                <div class="sub-img">
-                    <img src="">
+            <p>Somos pessoas altamente criativas e estamos sempre ansiosos para aprender mais e expandir nossos
+                conhecimentos.</p>
+            <div class="flex gap-50">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/joao.jpeg">
+                    </div>
+                    <h2 class="text-verde">João Paulo de Barros</h2>
+                    <p>Estudando linguagens de programação desde os 17 anos, ingressado na Univali no curso de análise e
+                        desenvolvimento de sistemas, focado no desenvolvimento full-stack e em MERN Stack (MongoDB,
+                        Express.js, React.js, Node.js) buscando novas experiências e evoluindo como profissional na
+                        área.</p>
                 </div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit commodi ex eaque rem modi voluptatum dolorem veritatis illum deleniti aliquid temporibus animi provident,</p>
-            </div>
-            <div class="sub-box">
-                <div class="sub-img">
-                    <img src="">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/vinicios.jpeg">
+                    </div>
+                    <h2 class="text-azul">Vinicius A Reis</h2>
+                    <p>Ingressado na Univali, cursando análise e desenvolvimento de sistemas, focado em gerenciamento de
+                        banco de dados (SQL Server, MySQL, MongoDB) e gestão de infraestrutura de ti, usando de
+                        ferramentas como: pfSense e Zabbix. Me especializando em uso de Ubquiti e Unifi.</p>
                 </div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit commodi ex eaque rem modi voluptatum dolorem veritatis illum deleniti aliquid temporibus animi provident,</p>
-            </div>
-            <div class="sub-box">
-                <div class="sub-img">
-                    <img src="">
+                <div class="sub-box">
+                    <div class="sub-img">
+                        <img src="./img/bianca.jpeg" width="100">
+                    </div>
+                    <h2 class="text-laranja">Bianca Ramos</h2>
+                    <p>Atualmente sou CTO e sócia da Singlec Pesquisa e Desenvolvimento de Inteligência Artificial,
+                        tenho dois anos de experiência como desenvolvedora front-end. Sou especializada em HTML, CSS,
+                        SASS, SCSS, React Native, ReactJS, JavaScript, Bootstrap, NativeBase, CorelDRAW,
+                        Affinity Design, Photoshop CS6, Adobe XD, SCRUM e Adobe Illustrator. Além
+                        disso, tenho conhecimento em NodeJS e Github.</p>
                 </div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit commodi ex eaque rem modi voluptatum dolorem veritatis illum deleniti aliquid temporibus animi provident,</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--trabalhos-->
-        <section class="trabalhos" id="trabalhos">
+    <!--trabalhos-->
+    <section class="trabalhos" id="trabalhos">
+        <div class="container-medium">
             <div class="trabalhos-text">
                 <h1>Trabalhos</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor non, obcaecati, iusto sint ducimus molestiae suscipit </p>
+                <p>Aqui você poderá conferir alguns dos nossos trabalhos que fizemos ao longo do curso</p>
                 <div class="trabalhos-img">
-                    <img src="">
+                    <img src="./img/trabalhos.png" width="1300">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--contato-->
-        <section class="contatos" id="contatos">
+    <!--contato-->
+    <section class="contatos" id="contato">
+        <div class="container-medium">
             <div class="contatos-head">
                 <h1>Contatos</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum quasi nihil molestias porro at! Temporibus </p>
+                <p>Aqui estão nossos meios de contato, caso deseje entrar em contato conosco</p>
             </div>
-            <div class="contato">
-                <h1>Lorem ipsum</h1>
-                <p>number</p>
-                <p>email</p>
+            <div class="flex justify-space-between">
+                <div class="contato">
+                    <h1 class="text-verde">João Paulo de Barros</h1>
+                    <p>+55 47 9274-1703</p>
+                    <p>jpbarros09@gmail.com</p>
+                </div>
+                <div class="contato">
+                    <h1 class="text-azul">Vinicius A Reis</h1>
+                    <p>+55 47 9114-6376</p>
+                    <p>contato.viniciusareis@gmail.com</p>
+                </div>
+                <div class="contato">
+                    <h1 class="text-laranja">Bianca Ramos</h1>
+                    <p>+55 41 9726-0335</p>
+                    <p>bianca.ramosilva12@gmail.com</p>
+                </div>
             </div>
-            <div class="contato">
-                <h1>Lorem ipsum</h1>
-                <p>number</p>
-                <p>email</p>
-            </div>
-            <div class="contato">
-                <h1>Lorem ipsum</h1>
-                <p>number</p>
-                <p>email</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!--link do js-->
-        <script type="text/javascript" src="script.js"></script>
+    <footer>
+        <p>Feito por João, Vinicios e Bianca</p>
+    </footer>
 
-    </body>
+    <!--link do js-->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
 </html>
